@@ -15,4 +15,5 @@ as specified in the 'BinaryUrl' field.
 To Do:
 
 [-] Add logic to check for existence of destination file to avoid unnecessary downloads
+
 [-] Add logic to check for versioning of binaries to avoid downloading or overwriting an up-to-date file
