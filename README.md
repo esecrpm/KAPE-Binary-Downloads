@@ -1,4 +1,4 @@
-# KAPE-Biinary-Downloads
+# KAPE-Binary-Downloads
 Script to download binary tools for KAPE modules
 
 Place this script in the KAPE\Modules directory and install 7-zip to a '7z' folder in the KAPE directory.
