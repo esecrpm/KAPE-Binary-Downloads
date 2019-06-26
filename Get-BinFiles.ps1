@@ -12,7 +12,7 @@
 	.NOTES
 	Author: eSecRPM
 	Date:   2019-03-21
-	Update: 2019-06-26  Removed 7zip dependency and added logic for PS1 extensions, LogParser.msi
+	Update: 2019-06-26  Removed 7zip dependency and added logic for PS1 extensions
 #>
 
 # The following modules do not contain a BinaryUrl field that points directly to a downloadable
@@ -61,10 +61,6 @@ Get-ChildItem -Path $currentDirectory -Filter *.mkape | Get-Content | ForEach-Ob
 			(New-Object System.Net.WebClient).DownloadFile($url,"$destinationDir$filename")
 			Expand-Archive -Path $destinationDir$filename -DestinationPath $destinationDir -Force
 			Remove-Item -Path $destinationDir$filename
-		}
-		if ($extension -eq "aspx?id=24659"){
-			$filename = "LogParser.msi"
-			(New-Object System.Net.WebClient).DownloadFile($url,"$destinationDir$filename")
 		}
 	}
 }
