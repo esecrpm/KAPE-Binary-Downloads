@@ -71,6 +71,7 @@ Get-ChildItem -Path $currentDirectory -Filter *.mkape | Get-Content | ForEach-Ob
 
 # densityscout, RECmd, SBECmd, sqlite3
 Copy-Item -Path $destinationDir"win64\densityscout.exe" -Destination $destinationDir -Force
+Copy-Item -Path $destinationDir"EvtxExplorer\EvtxECmd.exe" -Destination $destinationDir -Force
 Copy-Item -Path $destinationDir"RegistryExplorer\RECmd.exe" -Destination $destinationDir -Force
 Copy-Item -Path $destinationDir"ShellBagsExplorer\SBECmd.exe" -Destination $destinationDir -Force
 Copy-Item -Path $destinationDir"sqlite-tools-win32-x86-3270200\sqlite3.exe" -Destination $destinationDir -Force
