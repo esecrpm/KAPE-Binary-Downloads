@@ -5,7 +5,8 @@ Place this script in the KAPE\Modules directory.
 
 This is a rudimentary script to enumerate each of the .mkape configuration files looking for a 'BinaryUrl' field with a .exe, .ps1, or
 .zip extension. If found, the script will download the executable or zip to the KAPE\Modules\bin directory and extract any zip files.
-The script also copies several executables from extracted subdirectories to the bin directory (densityscout, RBECmd, SBECmd, sqlite3).
+The script also copies several executables from extracted subdirectories to the bin directory (densityscout, EvtxECmd, RBECmd, SBECmd,
+sqlite3).
 
 Know issues:
 
